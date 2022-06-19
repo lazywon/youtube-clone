@@ -9,9 +9,12 @@ const VideoListItem = ({video, onClick}) => {
 
     return (
         <li className="video-list">
-            <a href="#" onClick={clickVideoDetail}>
+            <a href="#" className="video-list-item" onClick={clickVideoDetail}>
                 <img className="video-thumbnail" src={thumbnails.default.url} alt="thumbnails" />
-                <span className="video-title">{video.snippet.title}</span>
+                <div className="video-title"> 
+                    <span className="video-title-span">{video.snippet.title}</span>
+                    <p>{video.snippet.channelTitle}</p>
+                </div>
             </a>
         </li>
     );

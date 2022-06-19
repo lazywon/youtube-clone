@@ -14,8 +14,10 @@ const SearchHeader = ({onSearch}) => {
 
     return (
         <nav className="navbar">
-            <img className="navbar-logo" src="/images/logo.png" alt="Youtube Logo" />
-            <span className="navbar-title">Youtube</span>
+            <a href="/" className="navbar-a">
+                <img className="navbar-logo" src="/images/logo.png" alt="Youtube Logo"/>
+                <span className="navbar-title">Youtube</span>
+            </a>
             <form ref={formRef} className="search-form" onSubmit={onSubmit}>
                 <input 
                     ref={inputRef}
