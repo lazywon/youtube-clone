@@ -21,3 +21,9 @@ section.content {
 .list {
   flex: 1 1 30%;
 }
+
+@media screen and (max-width: 890px) {
+  section.content {
+    flex-direction: column;
+  }
+}

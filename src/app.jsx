@@ -14,8 +14,15 @@ const App = ({ youtube }) => {
     };
 
     const search = query => {
-        youtube.search(query)
-        .then(videos => setVideos(videos));
+        setSelectedVideo(null);
+        // loading spinner
+        youtube
+        .search(query)
+        .then(videos => {
+            setVideos(videos);
+            setSelectedVideo(null);
+        })
+        .catch(error => alert(error));
     };
 
     useEffect(() => {

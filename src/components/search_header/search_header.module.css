@@ -10,6 +10,12 @@
     display: flex;
     align-items: center;
     margin-right: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.logo:hover {
+    color: rgb(253, 222, 251);
 }
 
 .input {
