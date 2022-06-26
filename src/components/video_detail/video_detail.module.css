@@ -1,7 +1,22 @@
 .detail {
-    padding: 0.2em;
+  padding: 0.2em;
 }
 
 .description {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
+}
+
+.video {
+}
+
+@media screen and (max-width: 48rem) {
+  .video {
+    height: 280px;
+  }
+}
+
+@media screen and (min-width: 49rem) and (max-width: 60rem) {
+  .video {
+    height: 400px;
+  }
 }
